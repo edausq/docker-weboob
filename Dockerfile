@@ -5,7 +5,7 @@ MAINTAINER Philipp Schmitt <philipp@schmitt.co>
 ARG repo=devel
 
 RUN apt-get update && \
-    apt-get install -y git && \
+    apt-get install -y git python-pdfminer && \
     useradd -m -s /bin/bash weboob && \
     mkdir -p /home/weboob/.config /home/weboob/.local/share /config /data && \
     ln -s /config /home/weboob/.config/weboob && \
