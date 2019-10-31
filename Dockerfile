@@ -1,8 +1,6 @@
-FROM python:2
+FROM python:3
 
-MAINTAINER Philipp Schmitt <philipp@schmitt.co>
-
-ARG repo=devel
+ARG repo=weboob
 
 RUN apt-get update && \
     apt-get install -y git python-pdfminer && \
